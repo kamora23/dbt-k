@@ -8,10 +8,12 @@ select
     ord.ordersellingprice,
     ord.ordersellingprice - ord.ordercostprice as orderprofit,
     -- from raw_customer
+    cus.customerid,
     cus.customername,
     cus.segment,
     cus.country,
     -- from raw_product
+    pro.productid,
     pro.category,
     pro.productname,
     pro.subcategory
